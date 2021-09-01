@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_video_item"
+        android:layout_width="112dp"
+        android:layout_height="60dp"
+        app:cardCornerRadius="5dp">
+
+        <ImageView
+            android:id="@+id/_img_thumbnail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/_txt_video_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="8:08"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/_txt_video_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video name"
+        android:textColor="@color/white"
+        android:layout_toEndOf="@id/card_video_item"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/_img_more"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_more_vert"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"/>
+
+</RelativeLayout>
